@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- бренд переименован: Skyline -> Sivorytka_Airlance -->
+  <meta name="description" content="Sivorytka_Airlance — поиск и подбор авиабилетов по всему миру. Находим лучшие маршруты по честной цене.">
+  <meta name="theme-color" content="#1757e8">
+  <meta property="og:title" content="Sivorytka_Airlance — билеты, которые ведут дальше">
+  <meta property="og:description" content="Находим лучшие маршруты по честной цене.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <title>Sivorytka_Airlance — билеты, которые ведут дальше</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231757e8'/%3E%3Cg fill='%23fff'%3E%3Crect x='8' y='18' width='4' height='7' rx='1' transform='skewX(-20)'/%3E%3Crect x='14' y='13' width='4' height='12' rx='1' transform='skewX(-20)'/%3E%3Crect x='20' y='8' width='4' height='17' rx='1' transform='skewX(-20)'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#search">Перейти к поиску билетов</a>
+
+  <header class="site-header" id="site-header">
+    <div class="shell nav-wrap">
+      <a class="brand" href="#top" aria-label="Sivorytka_Airlance — на главную">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Sivorytka_Airlance<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a class="active" href="#search">Найти билет</a>
+        <a href="#directions">Направления</a>
+        <a href="#about">О нас</a>
+      </nav>
+      <a class="header-contact" href="mailto:fesces12@gmail.com">Связаться <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-reveal><span class="eyebrow-line"></span>Путешествия начинаются здесь</p>
+          <h1 id="hero-title" data-reveal style="--delay:60ms">Билеты, которые<br><em>ведут дальше.</em></h1>
+          <p class="hero-text" data-reveal style="--delay:120ms">Находим лучшие маршруты по честной цене, чтобы вы больше думали о впечатлениях, а не о пересадках.</p>
+          <a class="text-link" href="#search" data-reveal style="--delay:180ms">Подобрать маршрут <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="hero-visual" role="img" aria-label="Иллюстрация: самолёт летит по маршруту от Москвы к Лиссабону">
+          <svg class="sky" viewBox="0 0 640 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="globe" cx="50%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/>
+                <stop offset="100%" stop-color="#cfe1ff" stop-opacity=".35"/>
+              </radialGradient>
+              <linearGradient id="arc" x1="0" y1="1" x2="1" y2="0">
+                <stop offset="0%" stop-color="#1757e8" stop-opacity=".25"/>
+                <stop offset="100%" stop-color="#1757e8" stop-opacity=".9"/>
+              </linearGradient>
+            </defs>
+
+            <circle cx="430" cy="180" r="205" fill="url(#globe)"/>
+            <circle cx="430" cy="180" r="205" fill="none" stroke="#1757e8" stroke-opacity=".14"/>
+            <ellipse cx="430" cy="180" rx="205" ry="72" fill="none" stroke="#1757e8" stroke-opacity=".1"/>
+            <ellipse cx="430" cy="180" rx="82" ry="205" fill="none" stroke="#1757e8" stroke-opacity=".1"/>
+
+            <path class="trail trail-soft" d="M 30 480 C 230 445 420 350 630 305" fill="none" stroke="#1757e8" stroke-opacity=".22" stroke-width="1.5" stroke-dasharray="2 9" stroke-linecap="round"/>
+            <path class="trail trail-main" d="M 72 424 C 205 344 300 186 556 152" fill="none" stroke="url(#arc)" stroke-width="2" stroke-dasharray="7 9" stroke-linecap="round"/>
+
+            <g class="pin pin-start">
+              <circle cx="72" cy="424" r="16" fill="#1757e8" fill-opacity=".12"/>
+              <circle cx="72" cy="424" r="6" fill="#1757e8"/>
+              <text x="96" y="429" class="pin-label">MOW</text>
+            </g>
+            <g class="pin pin-end">
+              <circle cx="556" cy="152" r="16" fill="#1757e8" fill-opacity=".12"/>
+              <circle cx="556" cy="152" r="6" fill="#1757e8"/>
+              <text x="556" y="122" class="pin-label" text-anchor="middle">LIS</text>
+            </g>
+
+            <g class="jet">
+              <path d="M 15 0 L -12 -10 L -7 0 L -12 10 Z" fill="#1757e8"/>
+            </g>
+
+            <g class="clouds" stroke="#1757e8" stroke-opacity=".2" fill="none" stroke-linecap="round">
+              <path class="cloud-a" d="M 96 168 h 62 M 108 156 a 14 12 0 0 1 26 0"/>
+              <path class="cloud-b" d="M 470 404 h 46 M 480 394 a 11 10 0 0 1 20 0"/>
+            </g>
+          </svg>
+
+          <div class="visual-note">
+            <strong>120+</strong>
+            <span>стран для<br>новых историй</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= SEARCH ======================= -->
+    <section class="search-section" id="search" aria-labelledby="search-title">
+      <div class="shell">
+        <div class="section-label" data-reveal><span>01</span><span class="label-rule"></span><span id="search-title">Поиск билетов</span></div>
+
+        <form class="search-box" id="flight-form" novalidate data-reveal style="--delay:80ms">
+          <fieldset class="search-fieldset">
+            <legend class="visually-hidden">Параметры поиска перелётов</legend>
+
+            <div class="trip-switch" role="group" aria-label="Тип поездки">
+              <button class="trip-option selected" type="button" data-trip="round" aria-pressed="true">Туда и обратно</button>
+              <button class="trip-option" type="button" data-trip="oneway" aria-pressed="false">В одну сторону</button>
+            </div>
+
+            <div class="fields-grid">
+              <!-- Откуда -->
+              <div class="field field--from" data-field="from">
+                <label class="field-label" for="from-input">Откуда</label>
+                <div class="field-input">
+                  <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+                  <input id="from-input" class="city-input" type="text" role="combobox" aria-expanded="false"
+                         aria-controls="from-list" aria-autocomplete="list" aria-label="Город вылета"
+                         placeholder="Город или аэропорт" autocomplete="off" spellcheck="false">
+                  <span class="field-code" data-code="from"></span>
+                </div>
+                <small class="field-hint" data-hint="from">Выберите город</small>
+                <div class="suggest" id="from-list" role="listbox" aria-label="Города вылета" hidden></div>
+              </div>
+
+              <!-- Обмен -->
+              <button class="swap" type="button" aria-label="Поменять города местами">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 7h11l-3-3M17 17H6l3 3"/></svg>
+              </button>
+
+              <!-- Куда -->
+              <div class="field field--to" data-field="to">
+                <label class="field-label" for="to-input">Куда</label>
+                <div class="field-input">
+                  <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/><circle cx="12" cy="10" r="2.6"/></svg>
+                  <input id="to-input" class="city-input" type="text" role="combobox" aria-expanded="false"
+                         aria-controls="to-list" aria-autocomplete="list" aria-label="Город прилёта"
+                         placeholder="Город или аэропорт" autocomplete="off" spellcheck="false">
+                  <span class="field-code" data-code="to"></span>
+                </div>
+                <small class="field-hint" data-hint="to">Весь мир</small>
+                <div class="suggest" id="to-list" role="listbox" aria-label="Города прилёта" hidden></div>
+              </div>
+
+              <!-- Когда -->
+              <div class="field field--date" data-field="date">
+                <span class="field-label" id="date-label">Когда</span>
+                <button class="field-trigger" type="button" id="date-trigger"
+                        aria-expanded="false" aria-controls="date-panel" aria-labelledby="date-label date-value">
+                  <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3.5" y="5" width="17" height="15" rx="3"/><path d="M3.5 10h17M8 3.5v3M16 3.5v3"/></svg>
+                  <span class="field-value" id="date-value">Выберите даты</span>
+                  <svg class="field-chevron" viewBox="0 0 12 8" aria-hidden="true" focusable="false"><path d="M1 1.5 6 6.5l5-5"/></svg>
+                </button>
+                <small class="field-hint" data-hint="date">Гибкие даты</small>
+
+                <div class="popover calendar" id="date-panel" hidden>
+                  <div class="calendar-head">
+                    <button class="cal-nav" type="button" data-cal-nav="-1" aria-label="Предыдущий месяц">
+                      <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M7.5 1.5 3 6l4.5 4.5"/></svg>
+                    </button>
+                    <strong class="cal-title" aria-live="polite"></strong>
+                    <button class="cal-nav" type="button" data-cal-nav="1" aria-label="Следующий месяц">
+                      <svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="m4.5 1.5 4.5 4.5-4.5 4.5"/></svg>
+                    </button>
+                  </div>
+                  <div class="cal-weekdays" aria-hidden="true">
+                    <span>Пн</span><span>Вт</span><span>Ср</span><span>Чт</span><span>Пт</span><span>Сб</span><span>Вс</span>
+                  </div>
+                  <div class="cal-grid" role="grid" aria-label="Календарь"></div>
+                  <div class="popover-foot">
+                    <span class="cal-hint"></span>
+                    <button class="ghost-button" type="button" data-close-popover>Готово</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Пассажиры -->
+              <div class="field field--pax" data-field="pax">
+                <span class="field-label" id="pax-label">Пассажиры</span>
+                <button class="field-trigger" type="button" id="pax-trigger"
+                        aria-expanded="false" aria-controls="pax-panel" aria-labelledby="pax-label pax-value">
+                  <svg class="field-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="8" r="3.4"/><path d="M5.5 19.5a6.5 6.5 0 0 1 13 0"/></svg>
+                  <span class="field-value" id="pax-value">1 взрослый</span>
+                  <svg class="field-chevron" viewBox="0 0 12 8" aria-hidden="true" focusable="false"><path d="M1 1.5 6 6.5l5-5"/></svg>
+                </button>
+                <small class="field-hint" data-hint="pax">Эконом</small>
+
+                <div class="popover pax-panel" id="pax-panel" hidden>
+                  <div class="pax-row">
+                    <div class="pax-info">
+                      <strong>Взрослые</strong>
+                      <span>от 12 лет</span>
+                    </div>
+                    <div class="stepper">
+                      <button class="step" type="button" data-step="adults" data-dir="-1" aria-label="Убрать взрослого">−</button>
+                      <output data-count="adults" aria-live="polite">1</output>
+                      <button class="step" type="button" data-step="adults" data-dir="1" aria-label="Добавить взрослого">+</button>
+                    </div>
+                  </div>
+
+                  <div class="pax-row">
+                    <div class="pax-info">
+                      <strong>Дети</strong>
+                      <span>2 — 11 лет</span>
+                    </div>
+                    <div class="stepper">
+                      <button class="step" type="button" data-step="children" data-dir="-1" aria-label="Убрать ребёнка">−</button>
+                      <output data-count="children" aria-live="polite">0</output>
+                      <button class="step" type="button" data-step="children" data-dir="1" aria-label="Добавить ребёнка">+</button>
+                    </div>
+                  </div>
+
+                  <div class="pax-row">
+                    <div class="pax-info">
+                      <strong>Младенцы</strong>
+                      <span>до 2 лет, без места</span>
+                    </div>
+                    <div class="stepper">
+                      <button class="step" type="button" data-step="infants" data-dir="-1" aria-label="Убрать младенца">−</button>
+                      <output data-count="infants" aria-live="polite">0</output>
+                      <button class="step" type="button" data-step="infants" data-dir="1" aria-label="Добавить младенца">+</button>
+                    </div>
+                  </div>
+
+                  <div class="cabin-switch" role="group" aria-label="Класс обслуживания">
+                    <button class="cabin-option selected" type="button" data-cabin="economy" aria-pressed="true">Эконом</button>
+                    <button class="cabin-option" type="button" data-cabin="comfort" aria-pressed="false">Комфорт</button>
+                    <button class="cabin-option" type="button" data-cabin="business" aria-pressed="false">Бизнес</button>
+                  </div>
+
+                  <div class="popover-foot">
+                    <span class="pax-note">Максимум 9 пассажиров</span>
+                    <button class="ghost-button" type="button" data-close-popover>Готово</button>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Кнопка -->
+              <div class="submit-cell">
+                <button class="search-button" type="submit">
+                  <span>Найти билеты</span>
+                  <span class="button-arrow" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" focusable="false"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </fieldset>
+
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ======================= RESULTS ======================= -->
+    <section class="results-section" id="results" hidden aria-labelledby="results-title">
+      <div class="shell">
+        <div class="results-head">
+          <div>
+            <h2 id="results-title" class="results-title"></h2>
+            <p class="results-meta"></p>
+          </div>
+          <div class="sort-bar" role="group" aria-label="Сортировка результатов">
+            <button class="sort-chip selected" type="button" data-sort="price" aria-pressed="true">Дешевле</button>
+            <button class="sort-chip" type="button" data-sort="duration" aria-pressed="false">Быстрее</button>
+            <button class="sort-chip" type="button" data-sort="departure" aria-pressed="false">Раньше вылет</button>
+          </div>
+        </div>
+        <div class="results-list" id="results-list"></div>
+      </div>
+    </section>
+
+    <!-- ======================= DIRECTIONS ======================= -->
+    <section class="directions-section" id="directions" aria-labelledby="directions-title">
+      <div class="shell">
+        <div class="directions-heading">
+          <div data-reveal>
+            <div class="section-label"><span>02</span><span class="label-rule"></span><span>Куда дальше</span></div>
+            <h2 id="directions-title">Маршруты,<br><em>которые зовут.</em></h2>
+          </div>
+          <p data-reveal style="--delay:80ms">Идеи для тех, кто уже готов<br>смотреть на мир шире.</p>
+        </div>
+
+        <div class="destination-grid">
+          <button class="destination destination-main" type="button" data-destination="LIS" data-reveal>
+            <img class="destination-media" src="https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="" loading="lazy" decoding="async">
+            <span class="destination-overlay">
+              <span class="destination-meta">Европа · 4 ч 45 мин</span>
+              <span class="destination-city">Лиссабон</span>
+              <span class="destination-price">от 18 900 ₽</span>
+            </span>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <button class="destination" type="button" data-destination="HND" data-reveal style="--delay:90ms">
+            <img class="destination-media" src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy" decoding="async">
+            <span class="destination-overlay">
+              <span class="destination-meta">Азия · 9 ч 40 мин</span>
+              <span class="destination-city">Токио</span>
+              <span class="destination-price">от 34 500 ₽</span>
+            </span>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </button>
+
+          <button class="destination" type="button" data-destination="JFK" data-reveal style="--delay:180ms">
+            <img class="destination-media" src="https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="" loading="lazy" decoding="async">
+            <span class="destination-overlay">
+              <span class="destination-meta">Америка · 11 ч 20 мин</span>
+              <span class="destination-city">Нью-Йорк</span>
+              <span class="destination-price">от 42 700 ₽</span>
+            </span>
+            <span class="destination-arrow" aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ABOUT ======================= -->
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="shell about-grid">
+        <div class="section-label" data-reveal><span>03</span><span class="label-rule"></span><span>Почему Sivorytka_Airlance</span></div>
+        <div>
+          <h2 id="about-title" data-reveal>Меньше поиска.<br><em>Больше пути.</em></h2>
+          <p class="about-text" data-reveal style="--delay:80ms">Мы превращаем сложный поиск перелётов в ясный маршрут. Сравниваем варианты, следим за ценами и остаёмся на связи, когда это действительно важно.</p>
+          <div class="stats" data-reveal style="--delay:140ms">
+            <div>
+              <strong>12 лет</strong>
+              <span>в туризме</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>на связи</span>
+            </div>
+            <div>
+              <strong>4,9/5</strong>
+              <span>оценка клиентов</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <a class="brand brand-light" href="#top" aria-label="Sivorytka_Airlance — на главную">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>Sivorytka_Airlance<span class="brand-dot">.</span></span>
+      </a>
+      <a class="footer-email" href="mailto:fesces12@gmail.com">fesces12@gmail.com <span aria-hidden="true">↗</span></a>
+      <p>Ваш следующий маршрут<br>начинается с одного письма.</p>
+    </div>
+    <div class="shell footer-bottom">
+      <span>© 2026 Sivorytka_Airlance</span>
+      <span>Москва · Работаем по всему миру</span>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
