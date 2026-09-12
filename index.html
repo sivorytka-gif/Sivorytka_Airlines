@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- бренд переименован: Skyline -> Sivorytka_Airlance -->
   <meta name="description" content="Sivorytka_Airlance — поиск и подбор авиабилетов по всему миру. Находим лучшие маршруты по честной цене.">
-  <meta name="theme-color" content="#1757e8">
+  <meta name="theme-color" content="#101f2c">
   <meta property="og:title" content="Sivorytka_Airlance — билеты, которые ведут дальше">
   <meta property="og:description" content="Находим лучшие маршруты по честной цене.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
   <title>Sivorytka_Airlance — билеты, которые ведут дальше</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231757e8'/%3E%3Cg fill='%23fff'%3E%3Crect x='8' y='18' width='4' height='7' rx='1' transform='skewX(-20)'/%3E%3Crect x='14' y='13' width='4' height='12' rx='1' transform='skewX(-20)'/%3E%3Crect x='20' y='8' width='4' height='17' rx='1' transform='skewX(-20)'/%3E%3C/g%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='5' fill='%23101f2c'/%3E%3Cg fill='%23f0efea'%3E%3Crect x='8' y='19' width='3' height='6'/%3E%3Crect x='14' y='14' width='3' height='11'/%3E%3C/g%3E%3Crect x='20' y='8' width='3' height='17' fill='%23c0175e'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Chivo+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -51,51 +51,82 @@
           <a class="text-link" href="#search" data-reveal style="--delay:180ms">Подобрать маршрут <span aria-hidden="true">→</span></a>
         </div>
 
-        <div class="hero-visual" role="img" aria-label="Иллюстрация: самолёт летит по маршруту от Москвы к Лиссабону">
-          <svg class="sky" viewBox="0 0 640 540" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
-            <defs>
-              <radialGradient id="globe" cx="50%" cy="40%" r="60%">
-                <stop offset="0%" stop-color="#ffffff" stop-opacity=".95"/>
-                <stop offset="100%" stop-color="#cfe1ff" stop-opacity=".35"/>
-              </radialGradient>
-              <linearGradient id="arc" x1="0" y1="1" x2="1" y2="0">
-                <stop offset="0%" stop-color="#1757e8" stop-opacity=".25"/>
-                <stop offset="100%" stop-color="#1757e8" stop-opacity=".9"/>
-              </linearGradient>
-            </defs>
+        <div class="hero-visual" role="img" aria-label="Навигационная схема маршрута Москва — Лиссабон: курс 247 градусов, 3923 километра, эшелон 380">
+          <svg class="sky" viewBox="0 0 640 500" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
+            <!-- рамка листа -->
+            <rect class="chart-frame" x="24" y="20" width="592" height="430"/>
 
-            <circle cx="430" cy="180" r="205" fill="url(#globe)"/>
-            <circle cx="430" cy="180" r="205" fill="none" stroke="#1757e8" stroke-opacity=".14"/>
-            <ellipse cx="430" cy="180" rx="205" ry="72" fill="none" stroke="#1757e8" stroke-opacity=".1"/>
-            <ellipse cx="430" cy="180" rx="82" ry="205" fill="none" stroke="#1757e8" stroke-opacity=".1"/>
-
-            <path class="trail trail-soft" d="M 30 480 C 230 445 420 350 630 305" fill="none" stroke="#1757e8" stroke-opacity=".22" stroke-width="1.5" stroke-dasharray="2 9" stroke-linecap="round"/>
-            <path class="trail trail-main" d="M 72 424 C 205 344 300 186 556 152" fill="none" stroke="url(#arc)" stroke-width="2" stroke-dasharray="7 9" stroke-linecap="round"/>
-
-            <g class="pin pin-start">
-              <circle cx="72" cy="424" r="16" fill="#1757e8" fill-opacity=".12"/>
-              <circle cx="72" cy="424" r="6" fill="#1757e8"/>
-              <text x="96" y="429" class="pin-label">MOW</text>
+            <!-- градусная сетка -->
+            <g class="graticule">
+              <path d="M 24 120 Q 320 102 616 120"/>
+              <path d="M 24 220 Q 320 204 616 220"/>
+              <path d="M 24 320 Q 320 306 616 320"/>
+              <path d="M 116 20 Q 100 235 132 450"/>
+              <path d="M 248 20 Q 242 235 256 450"/>
+              <path d="M 384 20 Q 392 235 378 450"/>
+              <path d="M 512 20 Q 532 235 502 450"/>
             </g>
-            <g class="pin pin-end">
-              <circle cx="556" cy="152" r="16" fill="#1757e8" fill-opacity=".12"/>
-              <circle cx="556" cy="152" r="6" fill="#1757e8"/>
-              <text x="556" y="122" class="pin-label" text-anchor="middle">LIS</text>
+
+            <!-- запасной маршрут -->
+            <path class="trail-soft" d="M 486 126 C 410 216 250 280 120 356"/>
+
+            <!-- основной маршрут -->
+            <path class="trail-main" d="M 486 126 C 400 150 230 196 120 356"/>
+
+            <!-- поворотный пункт -->
+            <g class="pin">
+              <path d="M 306 197 L 312 186 L 318 197 Z" fill="none" stroke="#101f2c" stroke-opacity=".55" stroke-width="1.2"/>
+              <text x="326" y="186" class="chart-note">NEVRO</text>
+            </g>
+
+            <!-- аэропорты -->
+            <g class="pin">
+              <circle cx="486" cy="126" r="13" fill="none" stroke="#c0175e" stroke-opacity=".35"/>
+              <circle cx="486" cy="126" r="4.5" fill="#c0175e"/>
+              <text x="506" y="122" class="pin-label">MOW</text>
+              <text x="506" y="142" class="chart-note">ШЕРЕМЕТЬЕВО</text>
+            </g>
+            <g class="pin">
+              <circle cx="120" cy="356" r="13" fill="none" stroke="#c0175e" stroke-opacity=".35"/>
+              <circle cx="120" cy="356" r="4.5" fill="#c0175e"/>
+              <text x="140" y="352" class="pin-label">LIS</text>
+              <text x="140" y="372" class="chart-note">ПОРТЕЛА</text>
+            </g>
+
+            <!-- блок данных маршрута -->
+            <g>
+              <rect x="230" y="248" width="212" height="80" fill="none" stroke="#101f2c" stroke-opacity=".18"/>
+              <text x="244" y="274" class="chart-note chart-note--signal">MOW → LIS</text>
+              <text x="244" y="296" class="chart-note">КУРС 247° · FL 380</text>
+              <text x="244" y="318" class="chart-note">3 923 КМ · 4 Ч 45 МИН</text>
+            </g>
+
+            <!-- масштабная линейка -->
+            <g>
+              <path d="M 56 404 h 140 M 56 399 v 10 M 126 401 v 6 M 196 399 v 10"
+                    fill="none" stroke="#101f2c" stroke-opacity=".35" stroke-width="1"/>
+              <text x="56" y="426" class="chart-note">0</text>
+              <text x="196" y="426" class="chart-note" text-anchor="end">2000 КМ</text>
+            </g>
+
+            <!-- картушка компаса -->
+            <g>
+              <circle cx="556" cy="380" r="30" fill="none" stroke="#101f2c" stroke-opacity=".2"/>
+              <circle cx="556" cy="380" r="21" fill="none" stroke="#101f2c" stroke-opacity=".12"/>
+              <path d="M 556 350 v 9 M 586 380 h -9 M 556 410 v -9 M 526 380 h 9"
+                    fill="none" stroke="#101f2c" stroke-opacity=".35" stroke-width="1"/>
+              <path d="M 556 363 L 561 383 L 556 379 L 551 383 Z" fill="#c0175e"/>
+              <text x="556" y="344" class="chart-note" text-anchor="middle">N</text>
             </g>
 
             <g class="jet">
-              <path d="M 15 0 L -12 -10 L -7 0 L -12 10 Z" fill="#1757e8"/>
-            </g>
-
-            <g class="clouds" stroke="#1757e8" stroke-opacity=".2" fill="none" stroke-linecap="round">
-              <path class="cloud-a" d="M 96 168 h 62 M 108 156 a 14 12 0 0 1 26 0"/>
-              <path class="cloud-b" d="M 470 404 h 46 M 480 394 a 11 10 0 0 1 20 0"/>
+              <path d="M 10 0 L -7 -6 L -4 0 L -7 6 Z"/>
             </g>
           </svg>
 
           <div class="visual-note">
             <strong>120+</strong>
-            <span>стран для<br>новых историй</span>
+            <span>стран<br>в поиске</span>
           </div>
         </div>
       </div>
